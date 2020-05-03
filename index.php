@@ -35,4 +35,27 @@ echo <<<END
 синтаксис heredoc</p> 
 END;
 
+$str_tmp = <<<EOL
+alskdjfkl;asjdfkl;
+\asdffasdf
+asdfasdf
+EOL;
+
+print $str_tmp;
+echo "<br />";
+echo $str_tmp;
+
+include 'slave.php';
+
+print <<<HTML
+<h1>Текст</h1>
+HTML;
+
+print <<<HLE
+<h1>Текст</h1>
+HLE;
+$url= "https://yandex.ru/";
+print <<<HT
+<a href="$url">Yandex.ru</a>
+HT;
 ?>
