@@ -18,4 +18,14 @@ $b = 1.00000000	;
 if (abs($a-$b)<$delta) {
 	print "$a and $b are equal enough";
 }
+
+$temp = 2.45321;
+
+echo "<br />";
+printf("===  %s",round($temp)); 
+echo "<br />";
+printf("===  %s",ceil($temp)); 
+echo "<br />";
+printf("===  %s",floor($temp)); 
+
 ?>
