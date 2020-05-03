@@ -28,4 +28,11 @@ printf("===  %s",ceil($temp));
 echo "<br />";
 printf("===  %s",floor($temp)); 
 
+echo "<br />";
+
+echo <<<END
+<p>Для отображения большого <br> количества текста используют 
+синтаксис heredoc</p> 
+END;
+
 ?>
