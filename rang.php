@@ -15,4 +15,7 @@ function str_rnd($lenght = 32, $shar = '0123456789qwertyuiop[]asdfghjklzxcvbnm')
 
 $srt1 = str_rnd();
 print $srt1;
+echo "<br />";
+$srt1 = str_rnd(16,'-.');
+print $srt1;
 ?>
