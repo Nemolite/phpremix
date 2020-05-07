@@ -21,4 +21,19 @@ foreach (squares(5,15) as $n=>$square){
 	echo $square;
 	
 }
+	echo "<br />";
+
+function gen_one_to_three() {
+    for ($i = 1; $i <= 3; $i++) {
+        // Обратите внимание, что $i сохраняет свое значение между вызовами.
+        yield $i;
+    }
+}
+
+$generator = gen_one_to_three();
+foreach ($generator as $value) {
+	echo "<br />";
+    echo "$value\n";
+}
+
 ?>

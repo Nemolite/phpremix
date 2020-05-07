@@ -1,16 +1,19 @@
 <p>Введите число А </p>
-<form action="" method="POST"> 
-<input type="number" name="num" min="2" />
+<form action="exam.php" method="POST"> 
+<input type="number" name="num"/>
+<input type="submit" value=" найти сумму ряда ">
 </form>
 <?php
-$a = $_POST['num'];
-$sum = 1;
-$n=2;
-do {
-  $sum = $sum+(1/$n);
-  $n=$n+1;
+$a = $_POST['num']; 
+$sum = 0;
+$sum1 = 0;
+$n = 1;
+if ($a>0) {
+	while ($sum<$a){
+		$sum1 = $sum;
+		$sum=$sum1 + (1/$n);
+		$n++;
+	}
 }
-while ($sum < $a);
-echo $sum;
-
+echo $sum1;
 ?>
